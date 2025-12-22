@@ -8,6 +8,7 @@ class Day01 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 167, 184, 198),
+      appBar: AppBar(title: Text("Day01"), centerTitle: true),
       body: Center(
         child: Container(
           height: 500,
@@ -57,7 +58,8 @@ class Day01 extends StatelessWidget {
                 padding: EdgeInsets.all(10),
                 child: Center(
                   child: Text(
-                    "Passionate about coding and building awesome \n           websites. Love to learn and create!",
+                    "Passionate about coding and building awesome websites. Love to learn and create!",
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 12,
                       color: const Color.fromARGB(255, 125, 124, 124),
@@ -118,6 +120,13 @@ class Day01 extends StatelessWidget {
             ],
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {
+          Navigator.pushNamed(context, '/day02');
+        },
+        label: Text("Day 02"),
+        icon: const Icon(Icons.navigate_next_outlined),
       ),
     );
   }
