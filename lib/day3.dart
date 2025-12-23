@@ -13,6 +13,7 @@ class _Day03State extends State<Day03> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("Day 03"), centerTitle: true),
       body: Center(
         child: SingleChildScrollView(
           child: Container(
